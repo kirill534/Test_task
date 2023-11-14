@@ -25,7 +25,7 @@ def time_sleep(func: Callable) -> Callable:
 
 
 @time_sleep
-def my_func(number) -> None:
+def my_func(number) -> float:
     return round(math.sqrt(sum([i_elem ** 20 for i_elem in range(number)])), 2)
 
 
